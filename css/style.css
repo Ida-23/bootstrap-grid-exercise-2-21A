@@ -8,6 +8,18 @@
   background-color: azure;
 }
 
+.grid_container_hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.grid_givning_objekt {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  place-self: center;
+}
+
 #voresis {
   background-color: lightyellow;
 }
@@ -23,24 +35,26 @@
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* END "sm-" 576px and up */
-
 
 /**************************************************/
 /* // Medium devices (tablets, 768px and up) */
 /**************************************************/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .knap {
+    width: 100%;
+    align-items: end;
+  }
+}
 
 /* END "md-" 768px and up */
-
-
 /**************************************************/
 /* // Large devices (desktops, 992px and up) */
 /**************************************************/
 @media (min-width: 992px) {
-
   /* END "lg-" 992px and up */
 }
 
@@ -48,7 +62,6 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 /**************************************************/
 @media (min-width: 1200px) {
-
   /* END "xl-" 1200px and up */
 }
 
@@ -56,6 +69,5 @@
 /* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
 /**************************************************/
 @media (min-width: 1400px) {
-
   /* END "xxl-" 1400px and up */
 }
